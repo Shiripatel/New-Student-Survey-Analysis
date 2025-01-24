@@ -10,12 +10,16 @@ This project analyzes survey data collected from incoming students at a Chicago-
 
 ### Demographic Variables:
 
-- **Meet 1+**: Students who have met with one or more support groups (e.g., First-Generation, Pell-Eligible, SOC (Non-White)).
-- **Meet 2+**: Students who have attended events or meetings with two or more support groups.
-- **Meet only 1**: Students who have met with exactly one support group.
-- **Meet only 2**: Students who have met with exactly two support groups.
-- **Meet all 3**: Students who have attended meetings or events with three support groups.
-- **None**: Students who have not attended any meetings or events.
+- **Meet 1+**: Students who meet more than one of the following criteria:
+    - Pell-eligible (students who are eligible for Pell Grants).
+    - First-generation college students (N-First Gen).
+    - Non-white students (SOC (Non-White)).
+    
+- **Meet 2+**: Students who meet more than two of the criteria mentioned above (Pell-eligible, First-Gen, Non-White).
+- **Meet only 1**: Students who meet exactly one of the criteria above (Pell-eligible, First-Gen, or Non-White).
+- **Meet only 2**: Students who meet exactly two of the criteria above.
+- **Meet all 3**: Students who meet all three criteria (Pell-eligible, First-Gen, and Non-White).
+- **None**: Students who do not meet any of the above criteria.
 - **Gender**: Student’s gender (e.g., Male, Female, Other).
 - **Level Entry**: Entry level of the student (e.g., Freshman, Transfer).
 - **N-ETHNIC_GROUP_DESCR**: Ethnicity of the student.
@@ -64,7 +68,7 @@ The following hypotheses are tested in this analysis:
 3. **H3**: Athletes report higher levels of personal resiliency (PRE) than other student groups.
     - **Test**: Compare the Personal Resiliency (PRE) scores between Athletes and other student groups.
 
-4. **H4**: Students who meet all three support groups (Meet all 3) have higher academic and personal self-management scores than those who do not attend any support group programs (Meet none).
+4. **H4**: Students who meet all three support group criteria (Meet all 3) have higher academic and personal self-management scores than those who do not attend any support group programs (Meet none).
     - **Test**: Compare the Academic Self-Management (ASM) and Personal Self-Management (PSM) scores between students who meet all three support groups and those who have attended none.
 
 5. **H5**: First-generation students (N-First Gen) will report lower affinity to the university (AFF) compared to continuing-generation students.
@@ -129,4 +133,3 @@ Feel free to contribute to this project by:
 This project is licensed under the MIT License.
 
 ---
-
